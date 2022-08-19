@@ -50,6 +50,7 @@ android {
 dependencies {
     implementation(project(path = ":core-navigation"))
     implementation(project(path = ":core-viewmodel"))
+    implementation(project(path = ":core-remote-config"))
 
     implementation(project(path = ":feature-splash"))
     implementation(project(path = ":feature-sleep"))
@@ -98,16 +99,6 @@ dependencies {
 
     // Kotlin Coroutines
     implementation(dependencyNotation = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1")
-
-//    // Kotlin Serialization
-//    implementation(dependencyNotation = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")
-//
-//    // Network
-//    implementation(dependencyNotation = "io.ktor:ktor-client-core:2.0.1")
-//    implementation(dependencyNotation = "io.ktor:ktor-client-android:2.0.1")
-//    implementation(dependencyNotation = "io.ktor:ktor-client-content-negotiation:2.0.1")
-//    implementation(dependencyNotation = "io.ktor:ktor-client-logging:2.0.1")
-//    implementation(dependencyNotation = "io.ktor:ktor-serialization-kotlinx-json:2.0.1")
 
     // Dagger
     implementation(dependencyNotation = "com.google.dagger:dagger:2.43.2")
