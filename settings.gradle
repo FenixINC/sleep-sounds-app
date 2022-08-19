@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Sleep sounds app"
+include ':app'
+include ':feature-splash'
+include ':core-network'
+include ':core-navigation'
+include ':core-viewmodel'
+include ':feature-sleep'
