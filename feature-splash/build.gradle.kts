@@ -34,10 +34,18 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_11.toString()
     }
+
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.3.0-rc01"
+    }
 }
 
 dependencies {
-    implementation(project(":core-navigation"))
+    implementation(project(path = ":core-navigation"))
+    implementation(project(path = ":core-viewmodel"))
 
     // AndroidX
     implementation(dependencyNotation = "androidx.core:core-ktx:1.8.0")
@@ -64,9 +72,9 @@ dependencies {
     // Integration with ViewModels
     implementation(dependencyNotation = "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0-alpha01")
 //    // Navigation Hilt
-//    implementation(dependencyNotation = "androidx.hilt:hilt-navigation-compose:1.0.0")
+    implementation(dependencyNotation = "androidx.hilt:hilt-navigation-compose:1.0.0")
 //    // Navigation Compose
-//    implementation(dependencyNotation = "androidx.navigation:navigation-compose:2.5.1")
+    implementation(dependencyNotation = "androidx.navigation:navigation-compose:2.5.1")
     // Accompanist system ui controller
     implementation(dependencyNotation = "com.google.accompanist:accompanist-systemuicontroller:0.24.3-alpha")
     // Accompanist Navigation Compose Animations

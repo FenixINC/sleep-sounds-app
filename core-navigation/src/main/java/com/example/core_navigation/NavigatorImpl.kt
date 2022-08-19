@@ -8,6 +8,7 @@ import javax.inject.Singleton
 
 @Singleton
 class NavigatorImpl @Inject constructor() : Navigator {
+
     private val navigationEvents = Channel<NavigatorEvent>()
 
     override val destinations = navigationEvents.receiveAsFlow()

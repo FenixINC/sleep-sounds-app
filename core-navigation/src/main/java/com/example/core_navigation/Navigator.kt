@@ -4,6 +4,7 @@ import androidx.navigation.NavOptionsBuilder
 import kotlinx.coroutines.flow.Flow
 
 interface Navigator {
+
     val destinations: Flow<NavigatorEvent>
 
     fun onCloseApp(): Boolean

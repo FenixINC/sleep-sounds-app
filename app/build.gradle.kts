@@ -49,6 +49,8 @@ android {
 
 dependencies {
     implementation(project(path = ":core-navigation"))
+    implementation(project(path = ":core-viewmodel"))
+
     implementation(project(path = ":feature-splash"))
     implementation(project(path = ":feature-sleep"))
 
@@ -69,30 +71,30 @@ dependencies {
     // Foundation (Border, Background, Box, Image, Scroll, shapes, animations, etc.)
     implementation(dependencyNotation = "androidx.compose.foundation:foundation:1.3.0-alpha02")
     // Material Design, Icons
-    implementation(dependencyNotation = "androidx.compose.material:material:1.2.0")
-    implementation(dependencyNotation = "androidx.compose.material:material-icons-core:1.2.0")
-    implementation(dependencyNotation = "androidx.compose.material:material-icons-extended:1.2.0")
+    implementation(dependencyNotation = "androidx.compose.material:material:1.2.1")
+    implementation(dependencyNotation = "androidx.compose.material:material-icons-core:1.2.1")
+    implementation(dependencyNotation = "androidx.compose.material:material-icons-extended:1.2.1")
     // Integration with activities
     implementation(dependencyNotation = "androidx.activity:activity-compose:1.5.1")
     // Integration with ViewModels
-    implementation(dependencyNotation = "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0-alpha01")
+    implementation(dependencyNotation = "androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
 //    // Navigation Hilt
-//    implementation(dependencyNotation = "androidx.hilt:hilt-navigation-compose:1.0.0")
+    implementation(dependencyNotation = "androidx.hilt:hilt-navigation-compose:1.0.0")
 //    // Navigation Compose
-//    implementation(dependencyNotation = "androidx.navigation:navigation-compose:2.5.1")
+    implementation(dependencyNotation = "androidx.navigation:navigation-compose:2.5.1")
     // Accompanist system ui controller
     implementation(dependencyNotation = "com.google.accompanist:accompanist-systemuicontroller:0.24.3-alpha")
     // Accompanist Navigation Compose Animations
     implementation(dependencyNotation = "com.google.accompanist:accompanist-navigation-animation:0.24.3-alpha")
 
-    // Navigation Voyager
-    implementation(dependencyNotation = "cafe.adriel.voyager:voyager-navigator:1.0.0-rc02")
-    implementation(dependencyNotation = "cafe.adriel.voyager:voyager-transitions:1.0.0-rc02")
-    implementation(dependencyNotation = "cafe.adriel.voyager:voyager-tab-navigator:1.0.0-rc02")
-    implementation(dependencyNotation = "cafe.adriel.voyager:voyager-transitions:1.0.0-rc02")
-    implementation(dependencyNotation = "cafe.adriel.voyager:voyager-androidx:1.0.0-rc02")
-    implementation(dependencyNotation = "cafe.adriel.voyager:voyager-koin:1.0.0-rc02")
-    implementation(dependencyNotation = "cafe.adriel.voyager:voyager-hilt:1.0.0-rc02")
+//    // Navigation Voyager
+//    implementation(dependencyNotation = "cafe.adriel.voyager:voyager-navigator:1.0.0-rc02")
+//    implementation(dependencyNotation = "cafe.adriel.voyager:voyager-transitions:1.0.0-rc02")
+//    implementation(dependencyNotation = "cafe.adriel.voyager:voyager-tab-navigator:1.0.0-rc02")
+//    implementation(dependencyNotation = "cafe.adriel.voyager:voyager-transitions:1.0.0-rc02")
+//    implementation(dependencyNotation = "cafe.adriel.voyager:voyager-androidx:1.0.0-rc02")
+//    implementation(dependencyNotation = "cafe.adriel.voyager:voyager-koin:1.0.0-rc02")
+//    implementation(dependencyNotation = "cafe.adriel.voyager:voyager-hilt:1.0.0-rc02")
 
     // Kotlin Coroutines
     implementation(dependencyNotation = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1")
