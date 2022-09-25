@@ -5,16 +5,19 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavGraphBuilder
 import com.example.core_navigation.NavigationDestination
+import com.example.core_navigation.destination.ComposerDestination
 import com.example.core_navigation.destination.SleepDestination
 import com.example.core_navigation.destination.SplashDestination
 import com.example.feature_sleep.presentation.SleepScreen
 import com.example.feature_splash.presentation.SplashScreen
+import com.example.presentation.ComposerScreen
 import com.google.accompanist.navigation.animation.composable
 
 private fun getDestinations(): Map<NavigationDestination, @Composable (NavBackStackEntry) -> Unit> =
     mapOf(
         SplashDestination to { SplashScreen() },
-        SleepDestination to { SleepScreen() }
+        SleepDestination to { SleepScreen() },
+        ComposerDestination to { ComposerScreen() },
 //        CollectionDetailsDestination to { navBackStackEntry ->
 //            val collectionId = navBackStackEntry
 //                .arguments
